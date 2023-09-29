@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+header {
+    padding: 20px 100px;
+    align-items: center;
+}
+
+header h1 {
+    grid-column: span 6;
+}
+
+header nav {
+    grid-column: 7 / span 6;
+    justify-self: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+header nav button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 15px;
+    background-color: #EF233C;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+header nav button:hover {
+    background-color: #000000;
+}
+
+header nav a:hover {
+    color: #c7c7c7;
+}
+
+
+.hero h2 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.hero {
+    margin: 100px 0;
+}
+
+.red-text {
+    color: #EF233C;
+}
+
+.about {
+    background-color: #EF233C;
+    color: #fff;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.about h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.about-container img {
+    height: 350px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.about-text {
+    padding: 20px;
+    padding-bottom: 70px;
+    padding-right: 40px;
+}
+
+
+.about-text h3 {
+    font-size: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.about-text button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #1a1a1a;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    margin-top: 10px;
+}
+
+.about-text button:hover {
+    background-color: #ff5266;
+}
+
+
+.skills {
+    background-color: #fff;
+    color: #EF233C;
+    padding: 100px 50px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+ion-icon {
+    font-size: 8rem;
+}
+
+.black {
+    color: #000000;
+}
+
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-container p {
+    text-decoration: underline;
+}
+
+.projects {
+    background-color: #EF233C;
+    color: #fff;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 150px 0px;
+}
+
+footer {
+    color: #000000;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type=text] {
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: .2em solid #EF233C;
+    background: rgba(#EF233C, .2);
+    border-radius: .2em .2em 0 0;
+    padding: .4em;
+    color: #EF233C;
+    width: 300px;
+    height: 20px;
+}
+
+input[type=text]::placeholder {
+    color: #EF233C;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.2rem;
+}
+
+form button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #EF233C;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
